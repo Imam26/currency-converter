@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:layoutDescription="@xml/scene_1"
-    tools:context=".fragment.FavoriteFragment">
+    tools:context=".presentation.view.fragment.FavoriteFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/videoListContainer"
