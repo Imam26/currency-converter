@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardViewItemFlag"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="4dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            card_view:cardBackgroundColor="#F5F5F5"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageViewFlag"
+                    android:layout_width="52dp"
+                    android:layout_height="28.55dp"
+                    android:layout_centerVertical="true"
+                    tools:background="@drawable/image1" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="13dp"
+            android:layout_height="0dp">
+        </Space>
+
+        <TextView
+            android:id="@+id/textViewFlagLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Тенге, Казахстан"
+            android:textAppearance="@style/style_currency_label"
+            android:lineSpacingExtra="-1sp"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

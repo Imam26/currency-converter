@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sortByMenuItem"
+        android:title="@string/sortBy">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/sortByAlphaMenuItem"
+                    android:title="@string/sortByAlpha" />
+                <item android:id="@+id/sortByCostMenuItem"
+                    android:title="@string/sortByCost" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/resetSortMenuItem"
+        android:title="@string/resetSort" />
+</menu>

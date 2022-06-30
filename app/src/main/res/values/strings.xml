@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="add">Добавить</string>
+    <string name="currency_name_header">Название валюты</string>
+    <string name="currency_amount_header">Кол. тенге в валюте</string>
+    <string name="select_flag">Выбрать флаг</string>
+    <string name="select_currency">Добавить валюту</string>
+    <string name="converter">Converter</string>
+    <string name="sortBy">Сортировать по</string>
+    <string name="sortByAlpha">Алфавиту</string>
+    <string name="sortByCost">Стоимости</string>
+    <string name="resetSort">Сбросить сортировку</string>
+    <string name="more">Больше</string>
+    <string name="delete_toolbar_title">%1$s selected</string>
+    <string name="confirmDeleteText">Вы уверены, что хотите\nудалить валюту?</string>
+    <string name="delete">Удалить</string>
+    <string name="cancel">Отмена</string>
+    <string name="currency_deleted">Валюта удалена</string>
+    <string name="undo_string">Вернуть</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_toolbar_title">Search</string>
+    <string name="favourite">Favourite</string>
+    <string name="history">History</string>
+    <string name="personal_page">Личная страница</string>
+    <string name="search">Search</string>
+    <string name="person_info">Ilyas Sabitov\ni.m.a.m.sabitov@mail.com</string>
+    <string name="share">Поделиться</string>
+    <string name="send_by_post">Отправить по почте</string>
+    <string name="call">Позвонить</string>
+    <string name="launch_camera">Запустить камеру</string>
+    <string name="main_title">Основные</string>
+    <string name="not_title">Без названия</string>
+    <string name="choose_post_app">Выберите приложение для отправки почты</string>
+    <string name="type_message">...введите текст</string>
+    <string name="cam_not_found">Камера не найдена!</string>
+    <string name="convert_count">Кол конвертации:</string>
+    <string name="time">Проведенное время:</string>
+    <string name="statistic">Статистика</string>
+    <string name="on_develop">В разработке</string>
+    <string name="video_description">Молодого мажора по имени Азамат, привыкшего к комфортной городской жизни, по стечению непредвиденных обстоятельств, отправляют работать Акимом в отдаленный посёлок - Таза Булак. ... С первого дня пребывания в ауле, новоиспечённый Аким мечтает о том, чтобы вернуться в город.</string>
+</resources>

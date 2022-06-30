@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft ="22sp"
+    android:layout_marginRight="18sp"
+    android:layout_marginTop="16sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/style_currency_text_input"
+        android:id="@+id/currencyTextLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cardViewFlag"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/currencyTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            tools:text="ddfsdfsdfsdfds"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardViewFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        card_view:cardBackgroundColor="#F5F5F5"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="0dp"
+        android:layout_marginLeft="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/currencyTextLayout"
+        app:layout_constraintStart_toEndOf="@id/currencyTextLayout"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/currencyImage"
+                android:layout_width="52dp"
+                android:layout_height="28.55dp"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/currencyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/currencyTextLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Тенге, Казахстан"
+        android:textAppearance="@style/style_currency_label"
+        android:lineSpacingExtra="-1sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

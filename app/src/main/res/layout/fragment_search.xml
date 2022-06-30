@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15sp"
+    android:paddingBottom="14sp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/style_currency_text_input"
+        android:layout_width="match_parent"
+        android:id="@+id/currencySearchTextLayout"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:hint="Поиск валюты"
+        android:textColorHint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/currencySearchTextField"
+            android:layout_width="match_parent"
+            android:layout_height="52sp"
+            android:inputType="text"
+            android:maxLines="1"
+            tools:text="ddfsdfsdfsdfds"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21sp"
+        android:scrollbars="none">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleLine="true"
+            app:singleSelection="true"
+            app:chipSpacingHorizontal="12sp">
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchedCurrencyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/item_searched_currency"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

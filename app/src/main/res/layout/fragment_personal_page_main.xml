@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.PersonalPageMainFragment">
+
+    <Button
+        style="@style/btn_personal_page_style"
+        android:id="@+id/shareBtn"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/share"/>
+
+    <Button
+        style="@style/btn_personal_page_style"
+        android:id="@+id/postSendBtn"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/shareBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/send_by_post"/>
+
+    <Button
+        style="@style/btn_personal_page_style"
+        android:id="@+id/callBtn"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/postSendBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/call"/>
+
+    <Button
+        style="@style/btn_personal_page_style"
+        android:id="@+id/launchCameraBtn"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/callBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/launch_camera"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

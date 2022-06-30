@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="25sp">
+
+        <TextView
+            android:id="@+id/textViewSelectFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/select_flag"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="-1sp"
+            android:gravity="center_vertical"
+            android:paddingBottom="20sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/flagRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/item_flag" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

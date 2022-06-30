@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingRight="19sp"
+    android:paddingLeft="21sp"
+    android:paddingTop="25sp"
+    android:paddingBottom="25sp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/style_currency_text_input"
+        android:id="@+id/layoutCurrencyName"
+        android:layout_width="match_parent"
+        android:hint="@string/currency_name_header"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCurrencyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:text="ddfsdfsdfsdfds"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="31dp">
+    </Space>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/style_currency_text_input"
+        android:id="@+id/layoutCurrencyAmount"
+        android:layout_width="match_parent"
+        android:hint="@string/currency_amount_header">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCurrencyAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            tools:text="ddfsdfsdfsdfds"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="16dp">
+    </Space>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSelectFlag"
+        android:layout_width="214dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#1789DB"
+        android:text="@string/select_flag"
+        android:layout_gravity="right"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="5dp"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="16dp">
+    </Space>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:backgroundTint="#1789DB"
+        android:text="@string/add"
+        android:layout_gravity="right"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="5dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
